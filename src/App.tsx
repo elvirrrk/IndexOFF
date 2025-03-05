@@ -1,11 +1,11 @@
-import './App.css'
+import './App.less';
+import {IndexPage} from './pages/IndexPage/IndexPage';
 
 function App() {
-
   return (
-    <>
-    {/* выбор страниц */}
-    </>
+    <body className='pageBody' >
+      <IndexPage/>
+    </body>
   )
 }
 
