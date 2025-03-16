@@ -8,7 +8,6 @@ interface Props {
 }
 
 export function GridLayout({ items }: Props): ReactNode {
-
   return (
     <div className={styles.simpeGrid}>
       {items.map((item) => {

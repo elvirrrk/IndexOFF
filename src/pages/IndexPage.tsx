@@ -11,7 +11,7 @@ export function IndexPage(): ReactElement {
   return (
     <div className={styles.mainContentBox}>
       <BrowserRouter>
-      <Header />
+        <Header />
         <Routes>
           <Route path="/" element={<GridLayout items={Cards} />} />
           {Articles.map((item: ArticleData) => {
@@ -40,4 +40,3 @@ export function IndexPage(): ReactElement {
     </div>
   );
 }
-

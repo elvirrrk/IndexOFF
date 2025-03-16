@@ -11,7 +11,8 @@ export function ArticleCard({
   about,
   whoCount,
   howCount,
-  disadvantages }: ArticleData): ReactNode {
+  disadvantages,
+}: ArticleData): ReactNode {
   return (
     <Box key={id} className={styles.articleContainer}>
       <Heading>{title}</Heading>
@@ -22,5 +23,5 @@ export function ArticleCard({
       <p>{disadvantages}</p>
       <img src={img["background"]} />
     </Box>
-  )
+  );
 }
