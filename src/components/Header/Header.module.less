@@ -1,0 +1,39 @@
+@import "../../commonStyles/colors.less";
+
+:local {
+  .mainHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 24px 128px;
+  }
+
+  .siteLogo,
+  .headerLinkText,
+  .logoUniMedia,
+  .headerLinkImgUniMedia,
+  .headerLinkImgUniMedia > svg {
+    outline: none;
+    outline-offset: 0;
+    text-decoration: none;
+    transition: ease-in-out all 0.3s;
+    // fill: @backgroundColor[mainDark];
+
+    &:hover,
+    &:focus {
+      color: @hoverColor;
+      fill: @hoverColor;
+    }
+
+    &:active {
+      color: @activeColor;
+      fill: @activeColor;
+    }
+  }
+
+  .siteLogo {
+    font-size: xx-large;
+    font-weight: 700;
+  }
+}

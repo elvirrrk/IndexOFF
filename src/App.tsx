@@ -1,12 +1,11 @@
-import './App.less';
-import {IndexPage} from './pages/IndexPage/IndexPage';
+import "./App.less";
+import { ReactElement } from "react";
+import { IndexPage } from "./pages/IndexPage";
 
-function App() {
+export function App(): ReactElement {
   return (
-    <body className='pageBody' >
-      <IndexPage/>
-    </body>
-  )
+    <div className="mainPageContainer">
+      <IndexPage />
+    </div>
+  );
 }
-
-export default App
